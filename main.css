@@ -1,0 +1,15 @@
+h1, h2 {
+    background: aquamarine;
+    color: midnightblue;
+}
+p {
+    background: burlywood;
+    color: darkslategrey;
+}
+ul>li {
+    background: aqua;
+    color: darkblue;
+}
+img {
+    width: 200px;
+}
