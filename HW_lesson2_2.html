@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW_2_part2</title>
+    <style>
+
+        .main {
+            height: auto;
+            width: 900px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .box {
+            border: 1px solid lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+        }
+
+        .box:nth-child(1) > h2 {
+            color: red;
+            margin-top: 20%;
+        }
+
+        .box:nth-child(2) > h2 {
+            color: blue;
+            margin-top: 20%;
+        }
+
+        .box:nth-child(3) > h2 {
+            color: green;
+            margin-top: 20%;
+        }
+
+        p {
+            color: grey;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .learnmore {
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #000000;
+            margin: 10% 0 10% 0;
+            width: 60%;
+            padding: 5% 0 5% 0;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="box">
+        <h2>Responsive Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nisi.</p>
+        <div class="learnmore">Learn more</div>
+    </div>
+    <div class="box">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nisi.</p>
+        <div class="learnmore">Learn more</div>
+    </div>
+    <div class="box">
+        <h2>Oracle Databases</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, nisi.</p>
+        <div class="learnmore">Learn more</div>
+    </div>
+</div>
+</body>
+</html>
