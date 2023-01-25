@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    height: 50vh;
+    width: 50vw;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+
+}
+
+.icon:nth-child(1) {
+    position: absolute;
+    right: 50px;
+    color: rebeccapurple;
+    bottom: 25px;
+}
+
+.icon:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    color: rebeccapurple;
+    bottom: 25px;
+}
+
+.window {
+    height: 35px;
+    width: 100px;
+    background-color: darkblue;
+    border-radius: 10%;
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+}
+
+.body {
+    height: 400px;
+    width: 100%;
+    background-color: darkblue;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.boxes:nth-child(1)  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    right: 61%;
+    top: 55%;
+    border-radius: 10%;
+}
+
+.boxes:nth-child(2)  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    right: 46%;
+    top: 55%;
+    border-radius: 10%;
+}
+
+.boxes:nth-child(3)  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    right: 31%;
+    top: 55%;
+    border-radius: 10%;
+}
