@@ -10,81 +10,80 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.header {
-    height: 70px;
-    width: 100%;
-    background-color: lightgrey;
+.header-left {
+    height: 100px;
+    width: 50%;
+    background-color: silver;
+    display: flex;
     position: relative;
-
-}
-
-.icon:nth-child(1) {
-    position: absolute;
-    right: 50px;
-    color: rebeccapurple;
-    bottom: 25px;
-}
-
-.icon:nth-child(2) {
-    position: absolute;
-    right: 20px;
-    color: rebeccapurple;
-    bottom: 25px;
 }
 
 .window {
-    height: 35px;
-    width: 100px;
-    background-color: darkblue;
+    height: 30px;
+    width: 40%;
     border-radius: 10%;
     position: absolute;
-    bottom: 15px;
-    left: 50px;
+    top: 37px;
+    left: 42px;
+}
+
+.header-right {
+    height: 100px;
+    width: 50%;
+    background-color: silver;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+}
+
+.darkblue {
+    background-color: darkblue;
+}
+
+.darkbluecolor {
+    color: darkblue;
+}
+
+.icon:nth-child(1) {
+    display: flex;
+    position: absolute;
+    right: 65px;
+}
+
+.icon:nth-child(2) {
+    display: flex;
+    position: absolute;
+    right: 34px;
 }
 
 .body {
     height: 400px;
     width: 100%;
-    background-color: darkblue;
+    display: flex;
 }
 
 .footer {
-    height: 100px;
+    height: 200px;
     width: 100%;
-    background-color: lightgray;
     display: flex;
+    background-color: silver;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 10px;
+    position: relative;
 }
 
-.boxes:nth-child(1)  {
-    position: absolute;
-    width: 100px;
+.boxes {
     height: 100px;
-    background-color: rebeccapurple;
-    right: 61%;
-    top: 55%;
-    border-radius: 10%;
-}
-
-.boxes:nth-child(2)  {
-    position: absolute;
     width: 100px;
-    height: 100px;
-    background-color: rebeccapurple;
-    right: 46%;
-    top: 55%;
+    background-color: purple;
     border-radius: 10%;
-}
-
-.boxes:nth-child(3)  {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rebeccapurple;
-    right: 31%;
-    top: 55%;
-    border-radius: 10%;
+    display: flex;
+    position: relative;
+    top: -35px;
 }
