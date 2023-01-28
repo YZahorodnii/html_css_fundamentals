@@ -14,6 +14,13 @@ body {
     row-gap: 10px;
 }
 
+.flex-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -36,83 +43,120 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 14px;
 }
 
 .header-left {
-    width: 20%;
+    width: 19%;
     height: 100%;
-    column-gap: 10px;
-
 }
 
 .header-right {
     width: 80%;
     height: 100%;
-    column-gap: 10px;
 }
 
 .body   {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     height: 70%;
+    width: 100%;
+    flex-wrap: wrap;
     column-gap: 10px;
+    row-gap: 10px;
 }
 
-.body-left {
-    width: 20%;
-    height: 100%;
-}
 .nav    {
-    width: 100%;
-    height: 67%;
-}
-.stLocator, .tools {
-    width: 100%;
-    height: 17%;
+    width: 19%;
+    height: 69%;
+    order: 0;
 }
 
-.body-mid   {
-    width: 60%;
-    height: 100%;
+.stlocat    {
+    width: 19%;
+    height: 14%;
+    order: 1;
 }
 
-.bath, .ad   {
-    width: 100%;
-    height: 30%;
+.tools  {
+    width: 19%;
+    height: 13%;
+    order: 2;
 }
 
-.types, .prod  {
-    width: 100%;
-    height: 70%;
+.bath   {
+    width: 59%;
+    height: 24%;
+    order: 3;
 }
-
-.body-right {
-    width: 20%;
-    height: 100%;
+.types  {
+    width: 59%;
+    height: 74%;
+    order: 4;
+}
+.ad {
+    width: 19%;
+    height: 24%;
+    order: 5;
+}
+.prod   {
+    width: 19%;
+    height: 74%;
+    order: 6;
 }
 
 @media screen and (max-width: 576px) {
     .container  {
-        font-size: smaller;
+        row-gap: 5px;
+        column-gap: 5px;
+        height: 120%;
     }
-    .header-left    {
-        width: 30%;
-    }
-    .header-right   {
-        width: 70%;
-    }
+    .header {
+    height: 10%;
+    row-gap: 5px;
+    column-gap: 5px;
+}
     .body   {
-        flex-direction: column;
-    }
-    .body-left  {
-        width: 100%;
-    }
+    row-gap: 5px;
+    column-gap: 5px;
+    flex-direction: row;
+}
+
     .nav    {
+        order: 0;
         width: 100%;
         height: 10%;
+    }
+
+    .stlocat    {
+        order: 5;
+        width: 49%;
+        height: 10%;
+    }
+
+    .tools  {
+        order: 6;
+        width: 49%;
+        height: 10%;
+    }
+
+    .bath   {
+        order: 1;
+        width: 69%;
+        height: 15%;
+    }
+    .types  {
+        order: 3;
+        width: 100%;
+        height: 40%;
+    }
+    .ad {
+        order: 2;
+        width: 29%;
+        height: 15%;
+    }
+    .prod   {
+        order: 4;
+        width: 100%;
+        height: 20%;
     }
 }
 
